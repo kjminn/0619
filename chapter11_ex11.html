@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="drawer">
+        <h1>Logo</h1>
+        <div class="drawer-menu">
+            <p>Esse pariatur</p>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Lorem ipsum</h1>
+        <p>Magna et excepteur minim Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci debitis nulla, excepturi veritatis pariatur ullam et molestiae minus doloremque earum unde, sapiente facere consequatur dolor facilis aliquid quae deserunt reprehenderit.</p>
+        <p>Qui do proident consequat Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos iste at odit blanditiis eius autem amet dolores, temporibus tempora sunt incidunt accusamus nobis alias. Inventore, odio? Dicta provident cumque repellat.</p>
+        <p>Aliquip eu qui ea ut Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, molestiae, suscipit praesentium ex, maiores eveniet consequuntur cum ratione quae vel architecto veniam quod doloremque! Qui et aut nemo voluptatem id.</p>
+        <p>Duis fugiat adipisicing Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure porro architecto aperiam ipsum similique reiciendis ut magni, molestias eaque impedit? Ratione at quidem, nihil quaerat minima libero reprehenderit soluta a.</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script> <script>
+        $('body').click(function () {
+             $(".drawer-menu").slideToggle("slow")
+        })
+    </script>
+    <style>     
+    * {         margin: 0;         padding: 0;
+        }
+    p {         margin: 10px 0;     }
+    .drawer {         position: fixed;         width: 100%;
+            text-align: center;         color: white;
+        background-color: red;
+    }
+    .drawer h1 {         height: 50px;         line-height: 50px;     }
+    .drawer-menu {         display: none;     }
+    .content {
+        /* 글자가 양쪽에 붙지 않게 설정합니다. */         padding: 10px;
+        /* div.drawer에 의해 가려지지 않게 내립니다. */         padding-top: 60px;
+    }
+</style>
+    
+</body>
+</html>
